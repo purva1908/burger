@@ -1,0 +1,36 @@
+
+
+<p>A paragraph with a 
+<button>button</button>.
+
+</p>
+
+
+
+<script>
+
+let  para=document.querySelector("p");
+let button=document.querySelector("button");
+
+
+
+
+para.addEventListener("mousedown",()=>
+
+{
+	console.log("handler for paragraph");
+	
+}
+
+);
+
+button.addEventListener("mousedown",()=>
+
+{
+	console.log("handler for button");
+
+	//event.stopPropagation();
+}
+
+);
+</script>
